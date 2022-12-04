@@ -1,0 +1,251 @@
+/**
+ * @name Zelk - Sander edition
+ * @version 1.2.2
+ * @description a smooth theme inspired by zorin, edited by your boy Sander
+ * @author schnensch
+ * @authorId 652801938374656013
+ * @source https://github.com/schnensch0/zelk
+ * @invite tMEcBhsNqA
+ */
+/*         ▀▀█ █▀▀ █   █ █ 
+           ▄▀  █▀▀ █   █▀▄
+           ▀▀▀ ▀▀▀ ▀▀▀ ▀ ▀ 
+            ▄▄   █▀ ▄▀█ █▄░█ █▀▄ █▀▀ █▀█   █▀▀ █▀▄ █ ▀█▀ █ █▀█ █▄░█
+            ░░   ▄█ █▀█ █░▀█ █▄▀ ██▄ █▀▄   ██▄ █▄▀ █ ░█░ █ █▄█ █░▀█          */
+/*--------------IMPORTS------------- */
+@import url(https://schnensch0.github.io/zelk/main.css);
+@import url(https://discord-custom-covers.github.io/usrbg/dist/usrbg.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+/*--------------COLORS---------------*/
+/*------remove / and * to apply------*/
+/* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/blue.css); */
+/* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/green.css); */
+/* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/gray.css); */
+/* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/orange.css); */
+/* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/purple.css); */
+/* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/red.css); */
+/* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/discord.css); */
+/*-------------VARIABLES-------------*/
+:root {
+	/* set to 'unset' to show */
+	--scrollbars: none;
+	/* user notes */
+	--notes: none;
+	/* direct message box */
+	--message: none;
+	/* set to '4px solid' to show */
+	--embed-color: none;
+	/* set to 'Inter', sans-serif !important to use Inter font*/
+	--font-primary: "Montserrat", "Fira code", Helvetica, Arial, sans-serif;
+	--font-display: "Fira code light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	--border-radius-1: 8px;
+	--border-radius-2: 8px;
+
+	/* ------ My Dark thema -------- */
+
+	--dark-colormain: hsl(215, 12%, 12%);
+	--dark-color-main-2: hsl(215, 20%, 9%);
+	--dark-color-accent: hsl(194, 83%, 18%);
+	--dark-bright: hsl(32, 88%, 44%);
+	--dark-spotter: #ff0000;
+}
+/*-----------CUSTOM COLORS-----------*/
+/*-------------DARK MODE-------------*/
+/*---------------BASIC---------------*/
+.theme-dark {
+	--accent-color: ;
+	--background-1: ;
+	--background-2: ;
+	--background-accent: var(--dark-bright);
+	--border-color: #000000;
+}
+/*-------------LIGHT MODE------------*/
+.theme-light {
+	--accent-color: #22c5fd;
+	--background-1: #ffffff;
+	--background-2: #f5f7fa;
+	--background-accent: var(--background-2);
+	--border-color: transparent;
+}
+/*-------------ADVANCED--------------*/
+.theme-dark {
+	/* background */
+	--background-primary: var(--dark-colormain);
+	--background-primary-alt: var(--dark-colormain);
+	--background-secondary: var(--dark-colormain);
+	--background-secondary-alt: var(--dark-color-accent);
+	--background-tertiary: var(--dark-color-main-2);
+	--background-accent-gradient: var(--dark-color-main-2);
+	--background-floating: var(--dark-color-accent);
+	--background-mentioned: #00000023;
+	--background-mentioned-hover: #000000;
+	/* modifiers */
+	--background-modifier-hover: var(--dark-bright);
+	--background-modifier-active: #1da3f0;
+	--background-modifier-selected: var(--dark-bright);
+	--background-modifier-accent: rgb(23, 189, 211);
+	--background-message-hover: rgba(0, 0, 0, 0.205);
+	/* text */
+	--text-normal: #00a9d3;
+	--text-positive: var(--dark-bright);
+	--text-muted: #246781;
+	--text-link: var(--dark-spotter);
+	--interactive-selected: #222;
+	--interactive-active: var(--dark-bright);
+	--interactive-normal: var(--dark-bright);
+	--interactive-muted: var(--dark-spotter);
+	--channels-default: var(--text-muted);
+	--header-primary: var(--text-normal);
+	--header-secondary: var(--text-muted);
+	/* more */
+	--settings-icon-color: var(--dark-bright);
+	--control-brand-foreground: var(--dark-bright);
+	--info-warning-foreground: var(--dark-bright);
+	--tab-selected: #27a8ee;
+	--switch: #2a95c7;
+	--activity-card-background: var(--dark-bright);
+	--brand-experiment: var(--dark-bright) !important;
+	/* buttons */
+	--button-background: hsla(0, 0%, 0%, 0);
+	--button-background-hover: var(--dark-bright);
+	--button-background-active: #ff0000;
+	--button-accent: var(--dark-bright);
+	--button-accent-hover: var(--dark-bright);
+	--button-accent-active: #0e232e;
+	--button-destructive: var(--dark-bright);
+	--button-destructive-hover: var(--dark-spotter);
+	--button-destructive-active: #ff0000;
+}
+.theme-light {
+	/* background */
+	--background-primary: var(--background-1);
+	--background-primary-alt: var(--background-1);
+	--background-secondary: var(--background-1);
+	--background-secondary-alt: var(--background-1);
+	--background-tertiary: var(--background-2);
+	--background-accent-gradient: var(--background-2);
+	--background-floating: var(--background-1);
+	--background-mentioned: #22c5fd10;
+	--background-mentioned-hover: #22c5fd15;
+	/* modifiers */
+	--background-modifier-hover: transparent;
+	--background-modifier-active: #b7c2cc;
+	--background-modifier-selected: var(--accent-color);
+	--background-modifier-accent: transparent;
+	--background-message-hover: transparent;
+	/* text */
+	--text-normal: #123354;
+	--text-positive: var(--text-normal);
+	--text-muted: #8495a7;
+	--text-link: #15a6f0;
+	--interactive-selected: var(--background-primary);
+	--interactive-active: var(--text-normal);
+	--interactive-normal: var(--text-normal);
+	--interactive-muted: var(--text-muted);
+	--channels-default: var(--text-normal);
+	--header-primary: var(--text-normal);
+	--header-secondary: var(--text-muted);
+	/* more */
+	--settings-icon-color: #566e86;
+	--control-brand-foreground: var(--dark-bright);
+	--info-warning-foreground: var(--accent-color);
+	--tab-selected: var(--background-1);
+	--switch: #c8d0d9;
+	--activity-card-background: var(--background-1);
+	--brand-experiment: var(--accent-color) !important;
+	/* buttons */
+	--button-background: var(--background-1);
+	--button-background-hover: #d3dae1;
+	--button-background-active: #b1bcc8;
+	--button-accent: var(--accent-color);
+	--button-accent-hover: #22c5fd;
+	--button-accent-active: #0d87c5;
+	--button-destructive: #22b1d4;
+	--button-destructive-hover: #ff929b;
+	--button-destructive-active: #4ad1fa;
+}
+/*--Sidebar--*/
+.container-1-ERn5,
+.sidebar-1tnWFu {
+	background-color: var(--dark-color-main-2);
+	border-radius: var(--border-radius-1) !important;
+	width: 300px;
+}
+.panels-3wFtMD {
+	border-radius: var(--border-radius-1);
+	background-color: var(--dark-bright);
+}
+.scroller-1ox3I2 {
+	border-radius: var(--border-radius-1);
+}
+.container-YkUktl {
+	background-color: var(--dark-colormain);
+}
+.numberBadge-37OJ3S.base-3IDx3L.eyebrow-132Xza.baseShapeRound-3epLEv {
+	color: var(--dark-color-main-2);
+	font-family: "Fira code";
+	font-size: 12px;
+}
+.container-1oeRFJ {
+	background-color: var(--dark-color-main-2);
+}
+.header-3OsQeK {
+	border-radius: var(--border-radius-1);
+}
+.childWrapper-1j_1ub {
+	color: var(--dark-bright);
+}
+.panels-3wFtMD {
+	background-color: var(--dark-bright);
+	border-radius: 0px;
+}
+.subtext-2HDqJ7 {
+	color: var(--dark-bright);
+}
+.interactive-1vLZ_I {
+	transition: 0.5s;
+}
+.container-1zzFcN {
+	background: linear-gradient(var(--dark-colormain) 50% ,rgba(0, 238, 255, 0.04) 120%);
+}
+.interactive-1vLZ_I:hover,
+.interactive-1vLZ_I:focus-within {
+	color: #222;
+}
+.text-sm-normal-3Zj3Iv:hover {
+	background-clip: padding-box;
+	color: #000000;
+}
+.hovered-20u3oh {
+	color: #000000;
+}
+.avatarSpeaking-2pCGrZ,
+.avatarSpeaking-33RRJU,
+.border-2BJQjd.speaking-3RWJBr,
+.avatar-2EVtgZ.speaking-3K28iH {
+	box-shadow: inset 0 0 0 2px var(--accent-color),
+		inset 0 0 0 5px rgba(255, 155, 62, 0.753);
+}
+.text-sm-normal-3Zj3Iv.title-338goq{
+	color: var(--dark-colormain);
+}
+.text-sm-normal-3Zj3Iv.title-338goq:hover{
+	color: var(--dark-bright);
+}
+.panel-2ZFCRb.activityPanel-9icbyU:hover{
+	background-color: var(--dark-color-main-2);
+}
+/*-----------DON'T CHANGE------------*/
+:root {
+	--outdated-122: none !important;
+}
+/*  usrbg | snippet by _david_#0218  */
+.userPopout-2j1gM4[style*="--user-background"] .banner-1YaD3N,
+.root-8LYsGj[style*="--user-background"] .banner-1YaD3N {
+	height: 120px;
+	background: var(--background-tertiary) var(--user-background)
+		var(--user-popout-position, center) center / cover !important;
+}
+.root-8LYsGj[style*="--user-background"] .banner-1YaD3N {
+	height: 240px;
+}
