@@ -1,41 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @import url(local/Thema.css);
-@import url("https://discordstyles.github.io/SoftX/RadialGlow.css");
-@import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css");
-@import url("https://discordstyles.github.io/Addons/windows-titlebar.css");
+@import url('https://discordstyles.github.io/SoftX/RadialGlow.css');
+@import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
 
 :root {
-	--background-image: url("https://i.imgur.com/8vJw9jV.png");
-	--background-blur: 20px; /* Blur intensity of --background-image */
-	--opacity: 0.1; /* Opacity of overall app. | Default: .85 */
-	--accent: 255, 115, 0; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
-	--glow-intensity: 0.8; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
-	--font: "Montserrat"; /* Custom font | Default: 'Inter' */
-	--channels-width: 16vw; /* Width of the channels list. | Default: 300px */
-	--guilds-width: 90px; /* Width of the server list. | Default: 105px */
-	--members-width: 17vw; /* Width of the members list. | Default: 280px */
-	--server-size: 50px; /* Size of the servers inside the server list. | Default: 50px */
-	--chat-avatar-size: 32px; /* Size of the chat avatars. | Default: 32px */
-	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
-	--rs-medium-spacing: 2px; /* Gap between avatar and status for User popout | MUST end in px */
-	--rs-large-spacing: 2px; /* Gap between avatar and status for User profiles | MUST end in px */
-	--rs-small-width: 2px; /* Ring width | Default: 1.5px */
-	--rs-medium-width: 2px;
-	--rs-large-width: 2px;
-	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-	--rs-online-color: #2bbb5b; /* Colour for online status */
-	--rs-idle-color: #fad11a; /* Colour for idle status */
-	--rs-dnd-color: #ee2525; /* Colour for dnd status */
-	--rs-offline-color: #4c5663; /* Colour for offline status */
-	--rs-phone-color: var(
-		--rs-online-color
-	); /* Colour of the ring and phone icon when a user is on their phone */
-	--rs-streaming-color: #7744d1; /* Colour for streaming status */
-	--rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-	--rs-invisible-color: #8f8f8f; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --background-image: url('https://i.imgur.com/8vJw9jV.png'); 
+  --background-blur: 20px; /* Blur intensity of --background-image */
+  --opacity: 0.1; /* Opacity of overall app. | Default: .85 */
+  --accent: 255, 115, 0;/* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
+  --glow-intensity: 0.8; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
+  --font: 'Montserrat'; /* Custom font | Default: 'Inter' */
+  --channels-width: 16vw; /* Width of the channels list. | Default: 300px */
+  --guilds-width: 90px; /* Width of the server list. | Default: 105px */
+  --members-width: 17vw; /* Width of the members list. | Default: 280px */
+  --server-size: 50px; /* Size of the servers inside the server list. | Default: 50px */
+  --chat-avatar-size: 32px; /* Size of the chat avatars. | Default: 32px */
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 2px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 2px; /* Gap between avatar and status for User profiles | MUST end in px */
+  --rs-small-width: 2px; /* Ring width | Default: 1.5px */
+  --rs-medium-width: 2px;
+  --rs-large-width: 2px;
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  --rs-online-color: #2bbb5b; /* Colour for online status */
+  --rs-idle-color: #fad11a; /* Colour for idle status */
+  --rs-dnd-color: #ee2525; /* Colour for dnd status */
+  --rs-offline-color: #4c5663; /* Colour for offline status */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone */
+  --rs-streaming-color: #7744d1; /* Colour for streaming status */
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  --rs-invisible-color: #8f8f8f; /* Colour for invisible status - Note: this will only show for your own invisibility */
 
-	/* Advanced properties */
+  /* Advanced properties */
 
+  --hue: 0deg;
 	--saturation: 20%;
 	--lightness: 8%;
 	--transition: 0.2s ease;
@@ -100,7 +100,7 @@
 	--brand-experiment: rgb(var(--accent), 0.35);
 	--brand-experiment-560: rgb(var(--accent), 0.55);
 	--brand-experiment-600: rgb(var(--accent), 0.4);
-	--interactive-active: rgb(255, 73, 73);
+  --interactive-active: rgb(255, 73, 73);
 }
 
 /* custom css */
@@ -110,29 +110,48 @@
 	border-radius: var(--border-radius-1) !important;
 	width: 20vw;
 }
-.searchBar-3TnChZ .searchBarComponent-3N7dCG {
-	background-color: rgba(0, 0, 0, 0.253);
-	margin: 20px;
-	text-align: center;
-	font-weight: 800;
-	color: #ff604b9f;
+.searchBar-3TnChZ .searchBarComponent-3N7dCG
+{
+  background-color: rgba(0, 0, 0, 0.253);
+  margin: 20px;
+  text-align: center;
+  font-weight: 800;
+  color: #4ba8ff9f;
 }
-.headerChildren-2qV9P8 svg {
-	opacity: 0;
+.headerChildren-2qV9P8 svg{
+  opacity: 0;
+
 }
-#app-mount .channelTextArea-1FufC0:focus-within {
-	border-color: rgb(0, 99, 124);
-	box-shadow: 0 0 calc(var(--input-glow-intensity) * 20px)
-		calc(var(--input-glow-intensity) * 5px) rgba(0, 179, 185, 0.25);
+#app-mount .channelTextArea-1FufC0:focus-within{
+  border-color: rgb(0, 99, 124);
+  box-shadow: 0 0 calc(var(--input-glow-intensity)
+     * 20px) calc(var(--input-glow-intensity)
+       * 5px) rgba(0, 179, 185, 0.25);
 }
 .modeConnected-NrO4cP .name-28HaxV,
-.modeConnected-NrO4cP:hover .name-28HaxV,
-.modeSelected-3DmyhH .name-28HaxV,
-.modeSelected-3DmyhH:hover .name-28HaxV,
-.modeUnread-3Cxepe .name-28HaxV,
-.modeUnread-3Cxepe:hover .name-28HaxV,
-.notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV,
-.notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
-	color: #ff6600e5;
-	filter: drop-shadow(7px 3px 10px rgb(255, 55, 82));
+ .modeConnected-NrO4cP:hover .name-28HaxV,
+ .modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV,
+ .modeUnread-3Cxepe .name-28HaxV,
+ .modeUnread-3Cxepe:hover .name-28HaxV,
+ .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV,
+ .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV{
+  color: #ff6600e5;
+  filter: drop-shadow(7px 3px 10px rgb(255, 55, 82));
+}
+#app-mount .tabBar-ra-EuL .item-3mHhwr.selected-g-kMVV, #app-mount .tabBar-ra-EuL .item-3mHhwr[aria-selected=true]{
+  background: rgba(0, 0, 0, 0.158) !important;
+  color: var(--accent) !important;
+  
+}
+input.input-2m5SfJ{
+  text-align: center;
+
+}
+.container-2oNtJn{
+  background-color: rgba(15, 8, 8, 0.459);
+}
+.scroller-2XLwLg,
+.header-2EadGG {
+  background-color: rgba(0, 0, 0, 0.342);
+  width: 100%;
 }
