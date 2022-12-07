@@ -24,14 +24,14 @@
   --rs-medium-width: 2px;
   --rs-large-width: 2px;
   --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-  --rs-online-color: #43b581; /* Colour for online status */
-  --rs-idle-color: #faa61a; /* Colour for idle status */
-  --rs-dnd-color: #f04747; /* Colour for dnd status */
-  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-online-color: #2bbb5b; /* Colour for online status */
+  --rs-idle-color: #fad11a; /* Colour for idle status */
+  --rs-dnd-color: #ee2525; /* Colour for dnd status */
+  --rs-offline-color: #4c5663; /* Colour for offline status */
   --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone */
-  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-streaming-color: #7744d1; /* Colour for streaming status */
   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-invisible-color: #8f8f8f; /* Colour for invisible status - Note: this will only show for your own invisibility */
 }
 .container-1-ERn5,
 .sidebar-1tnWFu {
