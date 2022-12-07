@@ -33,3 +33,9 @@
   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
   --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
 }
+.container-1-ERn5,
+.sidebar-1tnWFu {
+	background-color: var(--dark-c2);
+	border-radius: var(--border-radius-1) !important;
+	width: 20vw;
+}
